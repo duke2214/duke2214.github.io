@@ -157,11 +157,11 @@
 <!-- Add Google Maps -->
 <script>
   function login(){
-    var username = document.getElementByName('usrname').value;
-    var password = document.getElementByName('psw').value;
+    var username = document.getElementById('usrname').value;
+    var password = document.getElementById('psw').value;
     if(username == 'logan' && password == '1'){
     alert('you are logged in.')
-    } else {alert('not recoginzed')}
+    } else {alert('not recoginzed')} 
   }
   
   
@@ -201,9 +201,9 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
       </div>
         <div class="w3-section">
           <label><b>Username</b></label>
-          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" id="usrname" required>
           <label><b>Password</b></label>
-          <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Password" id="psw" required>
           <button class="w3-button w3-block w3-green w3-section w3-padding" onclick="login()">Login</button>
           <span onclick="login()">login</span>
           <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
